@@ -1,0 +1,39 @@
+<div>
+
+  <h2 class="center-align">New Task</h2>
+
+  <div id="titre">
+    <h4>Titre :</h4>
+    <input type="text" id="titre" ng-model="titre">
+  </div>
+
+  <div id="tag">
+    <h4>Tag :</h4>
+    <input type="text" id="tag" ng-model="tag">
+  </div>
+
+  <div id="date">
+    <h4>Date</h4>
+    <input type="date" id="date_hour">
+  </div>
+
+  <div id="hour">
+    <h4>Hour</h4>
+    <input type="time" id="date_hour">
+  </div>
+
+  <div id="des">
+    <h4>Description :</h4>
+    <textarea class="materialize-textarea" ng-model="description"></textarea>
+  </div>
+
+  <br>
+
+  <center>
+    <form action="#!/home">
+      <input type="submit" class="waves-effect waves-light btn-large" style="background-color: #FF3300" value="Valider" ng-click="add()">
+      <input type="submit" class="waves-effect waves-light btn-large" style="background-color: #FF3300" value="Annuler">
+    </form>
+  </center>
+
+</div>

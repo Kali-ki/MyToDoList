@@ -1,0 +1,40 @@
+<div ng-app="ToDo">
+
+  <div id="recherche">
+    <h4>Research :</h4>
+    <input type="text" ng-change="search()" ng-model="search_input">
+  </div>
+
+  <br>
+
+  <center><ul>
+
+        <li ng-repeat="task in tasks" class="container">
+          <a ng-click="getIndex(task)" href="#!/showTask">
+          <div class="row">
+            <div class="col s6">
+              <p class="flow-text">{{task.titre}}</p>
+              <p class="flow-text">{{task.tag}} | {{task.date}} | {{task.heure}}</p><br>
+            </div>
+            <div class="col s6">
+              <div class="right-align"><br>
+                <a class="waves-effect waves-light btn-large" style="background-color: #FF3300" ng-click="getIndex(task)" href="#!/editTask">Modifier</a><br><br>
+                <a class="waves-effect waves-light btn-large" style="background-color: #FF3300" ng-click="supp(task)">Supprimer</a>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          </a>
+        </li>
+
+  </ul></center>
+
+  <br>
+
+  <div id="nouvelle_tache">
+      <p class="right-align">
+        <a href="#!/newTask" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">+</i></a>
+      </p>
+  </div>
+
+</div>

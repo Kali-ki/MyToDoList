@@ -1,0 +1,30 @@
+<h2 class="center-align">Edit Task</h2>
+
+<div id="titre">
+  <input type="text" ng-model="titre">
+</div>
+
+<div id="tag">
+  <input type="text" ng-model="tag">
+</div>
+
+<div id="date">
+  <input type="date">
+</div>
+
+<div id="hour">
+  <input type="time">
+</div>
+
+<div id="description">
+  <textarea class="materialize-textarea" ng-model="description"></textarea>
+</div>
+
+<br>
+
+<center>
+  <form action="#!/home">
+    <input type="submit" class="waves-effect waves-light btn-large" style="background-color: #FF3300" value="Valider" ng-click="valideChange()">
+    <input type="submit" class="waves-effect waves-light btn-large" style="background-color: #FF3300" value="Annuler">
+  </form>
+</center>
